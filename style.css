@@ -1,0 +1,136 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #1a1a2e;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /*-- Main --*/
+    .game {
+      text-align: center;
+    }
+
+    h1 {
+      color: #e0e0e0;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    /*-- Status Message --*/
+    #status {
+      color: #a0c4ff;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      min-height: 30px;
+    }
+
+    /*-- Game Board --*/
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 110px);
+      grid-template-rows: repeat(3, 110px);
+      gap: 10px;
+      margin: 0 auto 25px auto;
+      width: fit-content;
+    }
+
+    /*-- Each Box --*/
+    .box {
+      background-color: #16213e;
+      border: 2px solid #0f3460;
+      border-radius: 12px;
+      font-size: 2.8rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #e0e0e0;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .box:hover {
+      background-color: #0f3460;
+      transform: scale(1.05);
+    }
+
+    /* X gets a blue color, O gets a pink color */
+    .box.x {
+      color: #a0c4ff;
+    }
+
+    .box.o {
+      color: #ff9fb2;
+    }
+
+    /* Winning boxes light up */
+    .box.winner {
+      background-color: #0f3460;
+      border-color: #a0c4ff;
+    }
+
+    /*-- Buttons --*/
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+
+    button:hover {
+      opacity: 0.85;
+      transform: scale(1.03);
+    }
+
+    #resetBtn {
+      background-color: #0f3460;
+      color: #e0e0e0;
+    }
+
+    #playAgainBtn {
+      background-color: #a0c4ff;
+      color: #1a1a2e;
+      display: none; /* hidden until game ends */
+    }
+
+    /*-- Score Board --*/
+    .scores {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .score-box {
+      background-color: #16213e;
+      border: 2px solid #0f3460;
+      border-radius: 10px;
+      padding: 10px 25px;
+      color: #e0e0e0;
+    }
+
+    .score-box span {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+
+    .score-box.x-score span { color: #a0c4ff; }
+    .score-box.o-score span { color: #ff9fb2; }
+    .score-box.draw-score span { color: #c0c0c0; }
