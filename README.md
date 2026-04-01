@@ -1,12 +1,12 @@
-# Tic Tac Toe 🎮
+# Tic Tac Toe 
  
 A simple two-player Tic Tac Toe game built with HTML, CSS, and JavaScript.
 
-## 🚀 Live Demo
+## Live Demo
 
 **https://jahnavi-nitr.github.io/Tic-Tac-Toe/**
 
-## ✨ Features
+## Features
  
 - **Player X vs Player O gameplay** 
 - **Scoreboard** — tracks wins and draws
@@ -14,13 +14,13 @@ A simple two-player Tic Tac Toe game built with HTML, CSS, and JavaScript.
 - **Reset Scores** — clears all scores
 - **Responsive design** — works on desktop and mobile 
 
- ## 🛠️ Built With
+ ## Built With
  
 - **HTML** — page structure and game board
 - **CSS** — dark theme styling, grid layout, hover effects
 - **JavaScript** — game logic, win checking, score tracking
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 tic-tac-toe/
